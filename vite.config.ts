@@ -9,4 +9,7 @@ export default defineConfig({
     tsconfigPaths(),
     netlifyPlugin(),
   ],
+
+export default defineConfig({
+  plugins: [remix(), tsconfigPaths()],
 });
