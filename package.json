@@ -6,6 +6,8 @@
     "dev": "remix vite:dev",
     "build": "remix vite:build",
     "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc --noEmit",
+    "validate:package-json": "node -e \"JSON.parse(require('fs').readFileSync('package.json','utf8')); console.log('package.json is valid JSON')\""
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

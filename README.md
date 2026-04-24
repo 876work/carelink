@@ -49,3 +49,12 @@ Remix + TypeScript + Tailwind + Supabase full-stack MVP for a babysitting market
 ## Netlify deploy notes
 - This project uses the Netlify Remix adapter (`@netlify/remix-adapter`) via `vite.config.ts`.
 - `netlify.toml` routes all requests to `/.netlify/functions/server` so deploy previews resolve Remix routes instead of returning a static 404 page.
+
+## Build troubleshooting (Netlify)
+If Netlify fails with `EJSONPARSE` for `package.json`, validate locally before pushing:
+
+```bash
+npm run validate:package-json
+```
+
+This checks the root `package.json` is strict JSON (no trailing commas/comments/conflict markers).
