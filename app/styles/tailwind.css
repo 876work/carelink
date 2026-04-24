@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-sand text-slate-900;
+}
+
+.card {
+  @apply rounded-xl bg-white p-6 shadow-md;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-md bg-lagoon px-4 py-2 font-semibold text-white hover:opacity-90;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-md border border-lagoon px-4 py-2 font-semibold text-lagoon hover:bg-lagoon hover:text-white;
+}
+
+.input {
+  @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 focus:border-lagoon focus:outline-none;
+}
