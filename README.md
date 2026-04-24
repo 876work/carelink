@@ -45,3 +45,7 @@ Remix + TypeScript + Tailwind + Supabase full-stack MVP for a babysitting market
 
 ## Notes
 - Stripe, messaging, and advanced scheduling intentionally excluded for MVP scope.
+
+## Netlify deploy notes
+- This project uses the Netlify Remix adapter (`@netlify/remix-adapter`) via `vite.config.ts`.
+- `netlify.toml` routes all requests to `/.netlify/functions/server` so deploy previews resolve Remix routes instead of returning a static 404 page.
